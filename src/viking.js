@@ -82,17 +82,18 @@ class War {
         this.saxonArmy = []
     }
 
-    addViking(vikingObj){
+    addViking(someViking){
 
-       this.vikingArmy.push(vikingObj)
+       this.vikingArmy.push(someViking)
     }
-    addSaxon(saxonObj){
-        this.saxonArmy.push(saxonObj);
+    addSaxon(someSaxon){
+        this.saxonArmy.push(someSaxon);
     }
     
     vikingAttack(){
-        let saxonArmyIndex = this.saxonArmy.length;
-        let randomNumber =  Math.floor(saxonArmyIndex * Math.random()) ;
+        // random saxon:
+        let index = this.saxonArmy.length;
+        let randomNumber =  Math.floor(index * Math.random()) ;
         let randomSaxon  = this.saxonArmy[randomNumber];
     }
      saxonAttack(){
